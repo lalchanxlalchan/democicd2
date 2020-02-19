@@ -14,6 +14,7 @@ steps:
     inputs:
       Contents: '**'
       TargetFolder: '$(build.artifactstagingdirectory)'
+
 #mathi ko variable vaneko staging folder(/a here)
 
   - task: PublishBuildArtifacts@1
@@ -21,3 +22,5 @@ steps:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: 'drop'
       publishLocation: 'Container'
+
+#staging folder ma vako file haru lai build gareko(readu to run banako)
